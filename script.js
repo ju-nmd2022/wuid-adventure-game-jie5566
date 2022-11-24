@@ -25,5 +25,9 @@ goToGarrit.addEventListener("click", function(){
         item2.style.visibility= "visible"
     }
 
+function startAgain() {
 
+    sessionStorage.removeItem("saveItem1", "itemClick")
+    sessionStorage.removeItem("saveItem2", "itemClick")
+    }
  
