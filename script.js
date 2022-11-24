@@ -8,31 +8,22 @@ let item4 = document.getElementById("beer")
 
  
 goToGarrit.addEventListener("click", function(){
-item1.style.visibility= "visible"
-})
+    item1.style.visibility= "visible";
+    sessionStorage.setItem("saveItem1", "itemClick")
+    })
+    
+    goToMartin.addEventListener("click", function(){
+    item2.style.visibility= "visible";
+    sessionStorage.setItem("saveItem2", "itemClick")
+    })
+    
+    if(sessionStorage.getItem("saveItem1") != null){
+        item1.style.visibility= "visible"
+    }
+    
+    if(sessionStorage.getItem("saveItem2") != null){
+        item2.style.visibility= "visible"
+    }
 
-goToMartin.addEventListener("click", function(){
-item2.style.visibility= "visible"
-})
-
-
-
-// function visibilityOfKitchen{
-//   if ()
-//      middleButton.style.visibility = "visible";
-// }
-
-// localStorage.setItem("visiblity", "visible");
-
-
-
-// document.getElementById("items").innerHTML = localStorage.getItem("visiblity");
-
-    // if (item1.style.visibility= "visible" && item2.style.visibility= "visible"
-    // ) {
-    //     middleButton.style.visibility= "visible"
-    // } else {
-    //     middleButton.style.visibility= "hidden"
-    // }
 
  

@@ -2,17 +2,18 @@ let item1 = document.getElementById("cheatsheet")
 let item2 = document.getElementById("book")
 let item3 = document.getElementById("coffee")
 let item4 = document.getElementById("beer")
+let middleButton = document.getElementById("middlebutton")
 
 
-item1.style.visibility= "visible"
-item2.style.visibility= "visible"
+    if(sessionStorage.getItem("saveItem1") != null){
+        item1.style.visibility= "visible"
+    }
 
-
-chooseCoffee.addEventListener("click", function(){
-    item3.style.visibility= "visible"
-     })
+    if(sessionStorage.getItem("saveItem2") != null){
+        item2.style.visibility= "visible"
+    }
     
-     chooseBeer.addEventListener("click", function(){
-    item4.style.visibility= "visible"
-    })
-
+      if (sessionStorage.getItem("saveItem2") != null && sessionStorage.getItem("saveItem1") != null) 
+      {
+        middleButton.style.visibility= "visible"
+    } 
