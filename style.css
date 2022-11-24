@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(246, 158, 202);
+}
+p {
+  font-family: monospace;
+  font-size: 2em;
+  text-align: center;
+}
+.dialogue {
+  margin-top: 2%;
+}
+
+.middlesectiongrid {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  gap: 8%;
+  margin-top: 5%;
+}
+.middlesectiongrid img {
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.buttonscontainer {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+button {
+  font-family: monospace;
+  font-size: 1.5em;
+  background-color: rgb(135, 221, 221);
+  border: none;
+  border-radius: 10%;
+  padding: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+}
+.item {
+  margin-left: 42%;
+  margin-right: 42%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2%;
+  visibility: hidden;
+}
+.item img {
+  width: 100%;
+  height: 10vh;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.onebuttonscen {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.onebuttonscen img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+}
