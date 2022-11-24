@@ -14,3 +14,9 @@
       return Math.floor(Math.random() * colors.length)
   }
   
+  function startAgain() {
+
+    sessionStorage.removeItem("saveItem1", "itemClick")
+    sessionStorage.removeItem("saveItem2", "itemClick")
+    }
+ 
